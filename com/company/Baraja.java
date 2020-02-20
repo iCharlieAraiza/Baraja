@@ -1,5 +1,4 @@
 package com.company;
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Baraja {
@@ -7,13 +6,8 @@ public class Baraja {
     ArrayList <String> cartas;
 
     public Baraja(){
-        crearBaraja();
-    }
-
-
-    private void crearBaraja(){
         String tipo, b;
-        this.cartas = new ArrayList<String>();
+        cartas = new ArrayList<String>();
 
         for(int i = 0; i < 4; i++){
             for (int j= 0; j< 13; j++){
@@ -23,7 +17,6 @@ public class Baraja {
             }
         }
     }
-
 
     public void getCartas(){
         for(int i = 0; i<52; i++){
